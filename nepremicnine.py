@@ -19,7 +19,7 @@ def writeToFile(content):
 
 def main():
     defaultPage = 1
-    while (defaultPage <= 1):
+    while (defaultPage <= 500):
         content = getWebsiteContent(page=defaultPage)
         soup = BeautifulSoup(content)
         posesti = soup.findAll("div", {"itemprop": "itemListElement"})
